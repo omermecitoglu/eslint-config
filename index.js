@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     "./base",
+    "./stylistic",
   ],
   plugins: [
     "import",
@@ -10,20 +11,20 @@ module.exports = {
     "import/order": [
       "error",
       {
-        "alphabetize": {
-          "caseInsensitive": false,
-          "order": "asc",
+        alphabetize: {
+          caseInsensitive: false,
+          order: "asc",
         },
-        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "type", "object"],
-        "pathGroups": [
-          { "group": "internal", "pattern": "~/**" },
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "type", "object"],
+        pathGroups: [
+          { group: "internal", pattern: "~/**" },
         ],
       },
     ],
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
-      { "args": "after-used", "argsIgnorePattern": "^_", "vars": "all", "varsIgnorePattern": "^_" },
+      { args: "after-used", argsIgnorePattern: "^_", vars: "all", varsIgnorePattern: "^_" },
     ],
   },
 };

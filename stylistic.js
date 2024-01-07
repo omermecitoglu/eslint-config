@@ -1,0 +1,40 @@
+module.exports = {
+  extends: [
+    "plugin:@stylistic/recommended-extends",
+  ],
+  plugins: [
+    "@stylistic",
+  ],
+  rules: {
+    "@stylistic/arrow-spacing": ["warn", { after: true, before: true }],
+    "@stylistic/brace-style": ["error", "1tbs"],
+    "@stylistic/comma-dangle": ["error", "always-multiline"],
+    "@stylistic/comma-spacing": "error",
+    "@stylistic/comma-style": "error",
+    "@stylistic/dot-location": ["error", "property"],
+    "@stylistic/indent": ["error", 2, { SwitchCase: 1 }],
+    "@stylistic/keyword-spacing": "error",
+    "@stylistic/member-delimiter-style": ["error", {
+      multiline: { delimiter: "comma", requireLast: true },
+      multilineDetection: "brackets",
+      singleline: { delimiter: "comma", requireLast: false },
+    }],
+    "@stylistic/no-floating-decimal": "error",
+    "@stylistic/no-multi-spaces": "error",
+    "@stylistic/no-multiple-empty-lines": ["error", { max: 2, maxBOF: 0, maxEOF: 1 }],
+    "@stylistic/no-trailing-spaces": ["error"],
+    "@stylistic/object-curly-spacing": ["error", "always"],
+    "@stylistic/quotes": ["error", "double"],
+    "@stylistic/semi": ["error", "always"],
+    "@stylistic/space-before-blocks": "error",
+    "@stylistic/space-before-function-paren": ["error", {
+      anonymous: "never",
+      asyncArrow: "always",
+      named: "never",
+    }],
+    "@stylistic/space-in-parens": "error",
+    "@stylistic/space-infix-ops": "error",
+    "@stylistic/space-unary-ops": "error",
+    "@stylistic/spaced-comment": "error",
+  },
+};
