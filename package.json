@@ -1,6 +1,6 @@
 {
   "name": "@omer-x/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My favorite eslint rules",
   "author": "Omer Mecitoglu",
   "license": "MIT",
