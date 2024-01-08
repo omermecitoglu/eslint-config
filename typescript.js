@@ -8,6 +8,10 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-unused-vars": "off",
-    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": ["error", {
+      ignorePrimitives: {
+        string: true,
+      },
+    }],
   },
 };
