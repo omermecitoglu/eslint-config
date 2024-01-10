@@ -3,7 +3,12 @@ module.exports = {
     "eslint:recommended",
   ],
   rules: {
+    "array-callback-return": "error",
+    "class-methods-use-this": "error",
     "curly": ["error", "multi-line", "consistent"],
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "line-comment-position": "off",
     "max-nested-callbacks": ["error", { max: 4 }],
     "max-statements-per-line": ["error", { max: 2 }],
     "no-console": "warn",
@@ -13,7 +18,9 @@ module.exports = {
     "no-shadow": ["error", { allow: ["err", "resolve", "reject"] }],
     "no-var": "error",
     "prefer-const": "error",
+    "require-await": "warn",
     "sort-imports": ["error", { ignoreDeclarationSort: true }],
+    "unicode-bom": ["error", "never"],
     "yoda": "error",
   },
 };

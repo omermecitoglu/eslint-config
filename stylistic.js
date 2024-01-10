@@ -73,9 +73,7 @@ module.exports = {
     "@stylistic/new-parens": ["error", "always"],
     "@stylistic/newline-per-chained-call": ["error", { ignoreChainWithDepth: 3 }],
     "@stylistic/no-confusing-arrow": "error",
-    "@stylistic/no-extra-parens": ["error", "all", {
-      returnAssign: false,
-    }],
+    "@stylistic/no-extra-parens": "off",
     "@stylistic/no-extra-semi": "error",
     "@stylistic/no-floating-decimal": "error",
     "@stylistic/no-mixed-operators": "error",
