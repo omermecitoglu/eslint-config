@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     "./base",
     "./stylistic",
+    "./jsx",
   ],
   plugins: [
     "import",
