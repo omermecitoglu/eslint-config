@@ -1,6 +1,6 @@
 {
   "name": "@omer-x/eslint-config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "My favorite eslint rules",
   "author": "Omer Mecitoglu",
   "license": "MIT",
@@ -13,6 +13,13 @@
     "access": "public"
   },
   "main": "index.js",
+  "files": [
+    "base.js",
+    "index.js",
+    "jsx.js",
+    "stylistic.js",
+    "typescript.js"
+  ],
   "scripts": {
     "lint": "eslint"
   },
