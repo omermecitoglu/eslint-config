@@ -1,6 +1,6 @@
 {
   "name": "@omer-x/eslint-config",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "My favorite eslint rules",
   "author": "Omer Mecitoglu",
   "license": "MIT",
@@ -27,13 +27,13 @@
     "eslint": ">= 8"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^1.5.3",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@stylistic/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-unused-imports": "^3.0.0"
+    "eslint-plugin-unused-imports": "^3.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^8.57.0"
   }
 }
