@@ -1,39 +1,72 @@
 {
   "name": "@omer-x/eslint-config",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "My favorite eslint rules",
-  "author": "Omer Mecitoglu",
-  "license": "MIT",
   "keywords": [
-    "eslint",
-    "config"
+    "eslint-config",
+    "shareable-config"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omermecitoglu/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omermecitoglu/eslint-config/issues"
+  },
+  "homepage": "https://github.com/omermecitoglu/eslint-config#readme",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "author": {
+    "name": "Omer Mecitoglu",
+    "email": "omer.mecitoglu@gmail.com",
+    "url": "https://omermecitoglu.github.io"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./base": {
+      "import": "./dist/base.js"
+    },
+    "./stylistic": {
+      "import": "./dist/stylistic.js"
+    },
+    "./typescript": {
+      "import": "./dist/typescript.js"
+    },
+    "./jsx": {
+      "import": "./dist/jsx.js"
+    },
+    "./import": {
+      "import": "./dist/import.js"
+    },
+    "./unused-imports": {
+      "import": "./dist/unused-imports.js"
+    }
+  },
   "files": [
-    "base.js",
-    "index.js",
-    "jsx.js",
-    "stylistic.js",
-    "typescript.js"
+    "dist/"
   ],
   "scripts": {
     "lint": "eslint"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": ">= 9"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-unused-imports": "^3.1.0"
+    "@stylistic/eslint-plugin": "^2.6.0-beta.0",
+    "@typescript-eslint/parser": "^8.0.0-alpha.40",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "typescript-eslint": "^8.0.0-alpha.39"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.6.0",
+    "typescript": "^5.5.3"
   }
 }
