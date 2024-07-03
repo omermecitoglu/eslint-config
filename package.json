@@ -53,6 +53,7 @@
     "dist/"
   ],
   "scripts": {
+    "build": "tsc",
     "lint": "eslint"
   },
   "peerDependencies": {
