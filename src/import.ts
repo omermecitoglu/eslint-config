@@ -1,9 +1,9 @@
-// import importPlugin from "eslint-plugin-import";
+import importPlugin from "eslint-plugin-import";
 
 export default [
   {
     plugins: {
-      // import: importPlugin,
+      import: importPlugin,
     },
     rules: {
       "import/order": ["error", {
