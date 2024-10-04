@@ -28,25 +28,36 @@
   "main": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./base": {
-      "import": "./dist/base.js"
+      "import": "./dist/base.js",
+      "types": "./dist/base.d.ts"
     },
     "./stylistic": {
-      "import": "./dist/stylistic.js"
+      "import": "./dist/stylistic.js",
+      "types": "./dist/stylistic.d.ts"
     },
     "./typescript": {
-      "import": "./dist/typescript.js"
+      "import": "./dist/typescript.js",
+      "types": "./dist/typescript.d.ts"
     },
-    "./jsx": {
-      "import": "./dist/jsx.js"
+    "./react": {
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    },
+    "./jsx-a11y": {
+      "import": "./dist/jsx-a11y.js",
+      "types": "./dist/jsx-a11y.d.ts"
     },
     "./import": {
-      "import": "./dist/import.js"
+      "import": "./dist/import.js",
+      "types": "./dist/import.d.ts"
     },
     "./unused-imports": {
-      "import": "./dist/unused-imports.js"
+      "import": "./dist/unused-imports.js",
+      "types": "./dist/unused-imports.d.ts"
     }
   },
   "files": [

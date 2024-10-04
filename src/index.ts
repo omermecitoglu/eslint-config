@@ -1,10 +1,11 @@
-import base from "./base.js";
-import stylistic from "./stylistic.js";
-import typescript from "./typescript.js";
-import react from "./react.js";
-import jsxAccessibility from "./jsx-a11y.js";
-import importPlugin from "./import.js";
-import unusedImports from "./unused-imports.js";
+import base from "./base";
+import importPlugin from "./import";
+import jsxAccessibility from "./jsx-a11y";
+import react from "./react";
+import stylistic from "./stylistic";
+import typescript from "./typescript";
+import unusedImports from "./unused-imports";
+import type { Linter } from "eslint";
 
 export default [
   ...base,
@@ -14,4 +15,4 @@ export default [
   ...jsxAccessibility,
   ...importPlugin,
   ...unusedImports,
-];
+] as Linter.Config[];

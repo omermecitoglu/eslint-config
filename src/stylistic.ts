@@ -1,4 +1,5 @@
 import stylistic from "@stylistic/eslint-plugin";
+import type { Linter } from "eslint";
 
 export default [
   {
@@ -121,4 +122,4 @@ export default [
       "@stylistic/yield-star-spacing": ["error", "both"],
     },
   },
-];
+] as Linter.Config[];

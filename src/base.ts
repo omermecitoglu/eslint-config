@@ -1,4 +1,5 @@
 import eslint from "@eslint/js";
+import type { Linter } from "eslint";
 
 export default [
   eslint.configs.recommended,
@@ -25,4 +26,4 @@ export default [
       "yoda": "error",
     },
   },
-];
+] as Linter.Config[];

@@ -1,5 +1,6 @@
 import react from "eslint-plugin-react";
 import globals from "globals";
+import type { Linter } from "eslint";
 
 export default [
   {
@@ -25,4 +26,4 @@ export default [
       }],
     },
   },
-];
+] as Linter.Config[];

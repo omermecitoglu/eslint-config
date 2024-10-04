@@ -1,4 +1,5 @@
 import unusedImports from "eslint-plugin-unused-imports";
+import type { Linter } from "eslint";
 
 export default [
   {
@@ -13,4 +14,4 @@ export default [
       ],
     },
   },
-];
+] as Linter.Config[];

@@ -1,5 +1,6 @@
-import tseslint from "typescript-eslint";
 import parser from "@typescript-eslint/parser";
+import tseslint from "typescript-eslint";
+import type { Linter } from "eslint";
 
 export default [
   ...tseslint.configs.recommended,
@@ -35,4 +36,4 @@ export default [
       "dot-notation": "off",
     },
   },
-];
+] as Linter.Config[];
