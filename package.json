@@ -1,39 +1,88 @@
 {
   "name": "@omer-x/eslint-config",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "My favorite eslint rules",
-  "author": "Omer Mecitoglu",
-  "license": "MIT",
   "keywords": [
-    "eslint",
-    "config"
+    "eslint-config",
+    "shareable-config"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omermecitoglu/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omermecitoglu/eslint-config/issues"
+  },
+  "homepage": "https://github.com/omermecitoglu/eslint-config#readme",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "author": {
+    "name": "Omer Mecitoglu",
+    "email": "omer.mecitoglu@gmail.com",
+    "url": "https://omermecitoglu.github.io"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./base": {
+      "import": "./dist/base.js",
+      "types": "./dist/base.d.ts"
+    },
+    "./stylistic": {
+      "import": "./dist/stylistic.js",
+      "types": "./dist/stylistic.d.ts"
+    },
+    "./typescript": {
+      "import": "./dist/typescript.js",
+      "types": "./dist/typescript.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    },
+    "./jsx-a11y": {
+      "import": "./dist/jsx-a11y.js",
+      "types": "./dist/jsx-a11y.d.ts"
+    },
+    "./import": {
+      "import": "./dist/import.js",
+      "types": "./dist/import.d.ts"
+    },
+    "./unused-imports": {
+      "import": "./dist/unused-imports.js",
+      "types": "./dist/unused-imports.d.ts"
+    }
+  },
   "files": [
-    "base.js",
-    "index.js",
-    "jsx.js",
-    "stylistic.js",
-    "typescript.js"
+    "dist/"
   ],
   "scripts": {
+    "build": "tsc",
     "lint": "eslint"
   },
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": ">= 9"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-unused-imports": "^3.1.0"
+    "@stylistic/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "typescript-eslint": "^8.8.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "@types/eslint__js": "^8.42.3",
+    "@types/eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2"
   }
 }

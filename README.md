@@ -20,20 +20,50 @@ npm install @omer-x/eslint-config --save-dev
 
 Ensure you have the following peer dependencies installed:
 
-- `eslint >= 8`
+- `eslint >= 9`
 
 ## Usage
 
-Add the configuration to your ESLint configuration file (e.g., `.eslintrc.js`):
+Add the configuration to your ESLint configuration file (e.g., `eslint.config.js` or `eslint.config.mjs`):
 
 ```javascript
-module.exports = {
-  extends: [
-    "@omer-x/eslint-config",
-    "@omer-x/eslint-config/typescript" // optional
-  ],
-  // other configurations...
-};
+import omer from "@omer-x/eslint-config";
+
+export default [
+  ...omer,
+  {
+    rules: {
+      // add your other rules here
+    },
+  },
+];
+```
+
+Or you can install components individually
+
+```javascript
+import base from "@omer-x/eslint-config/base";
+import stylistic from "@omer-x/eslint-config/stylistic";
+import typescript from "@omer-x/eslint-config/typescript";
+import react from "@omer-x/eslint-config/react";
+import jsxAccessibility from "@omer-x/eslint-config/jsx-a11y";
+import importPlugin from "@omer-x/eslint-config/import";
+import unusedImports from "@omer-x/eslint-config/unused-imports";
+
+export default [
+  ...base,
+  ...stylistic,
+  ...typescript,
+  ...react,
+  ...jsxAccessibility,
+  ...importPlugin,
+  ...unusedImports,
+  {
+    rules: {
+      // add your other rules here
+    },
+  },
+];
 ```
 
 ## License

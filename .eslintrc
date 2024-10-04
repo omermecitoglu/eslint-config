@@ -1,7 +1,0 @@
-{
-  "extends": "./index",
-  "rules": {
-    "no-undef": "off",
-    "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": false }]
-  }
-}
