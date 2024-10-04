@@ -1,10 +1,10 @@
-import base from "./base";
-import importPlugin from "./import";
-import jsxAccessibility from "./jsx-a11y";
-import react from "./react";
-import stylistic from "./stylistic";
-import typescript from "./typescript";
-import unusedImports from "./unused-imports";
+import base from "./base.js";
+import importPlugin from "./import.js";
+import jsxAccessibility from "./jsx-a11y.js";
+import react from "./react.js";
+import stylistic from "./stylistic.js";
+import typescript from "./typescript.js";
+import unusedImports from "./unused-imports.js";
 import type { Linter } from "eslint";
 
 export default [
