@@ -4,7 +4,8 @@ import type { Linter } from "eslint";
 
 export default [
   {
-    files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
+    files: ["src/**/*.+(jsx|tsx)", "./*.+(jsx|tsx)"],
+    ignores: ["node_modules/"],
     languageOptions: {
       globals: {
         ...globals.browser,

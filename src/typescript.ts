@@ -1,18 +1,25 @@
+import plugin from "@typescript-eslint/eslint-plugin";
 import parser from "@typescript-eslint/parser";
 import tseslint from "typescript-eslint";
-import type { Linter } from "eslint";
+import base from "./base.js";
+import type { ESLint, Linter } from "eslint";
 
 export default [
-  ...tseslint.configs.recommended,
   {
-    files: ["**/*.ts"],
+    files: ["src/**/*.+(ts|tsx)", "./*.+(ts|tsx)"],
+    ignores: ["node_modules/"],
     languageOptions: {
       parser,
       parserOptions: {
         project: "./tsconfig.json",
       },
     },
+    plugins: {
+      "@typescript-eslint": plugin as unknown as ESLint.Plugin,
+    },
     rules: {
+      ...base.map(c => c.rules).reduce((acc, val) => ({ ...acc, ...val }), {}),
+      ...tseslint.configs.recommended.map(c => c.rules).reduce((acc, val) => ({ ...acc, ...val }), {}),
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/ban-ts-comment": "warn",
@@ -34,6 +41,7 @@ export default [
       "@typescript-eslint/prefer-string-starts-ends-with": "error",
       "class-methods-use-this": "off",
       "dot-notation": "off",
+      "no-console": "warn",
     },
   },
 ] as Linter.Config[];

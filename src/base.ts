@@ -2,9 +2,11 @@ import eslint from "@eslint/js";
 import type { Linter } from "eslint";
 
 export default [
-  eslint.configs.recommended,
   {
+    files: ["src/**/*.+(js|jsx)", "./*.+(js|jsx)"],
+    ignores: ["node_modules/"],
     rules: {
+      ...eslint.configs.recommended.rules,
       "array-callback-return": "error",
       "class-methods-use-this": "error",
       "curly": ["error", "multi-line", "consistent"],

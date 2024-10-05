@@ -3,6 +3,8 @@ import type { Linter } from "eslint";
 
 export default [
   {
+    files: ["src/**/*.+(js|jsx|ts|tsx)", "./*.+(js|jsx|ts|tsx)"],
+    ignores: ["node_modules/"],
     plugins: {
       "@stylistic": stylistic,
     },
