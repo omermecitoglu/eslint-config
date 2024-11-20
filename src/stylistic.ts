@@ -77,7 +77,7 @@ export default [
       }],
       "@stylistic/multiline-ternary": "off",
       "@stylistic/new-parens": ["error", "always"],
-      "@stylistic/newline-per-chained-call": ["error", { ignoreChainWithDepth: 3 }],
+      // "@stylistic/newline-per-chained-call": ["error", { ignoreChainWithDepth: 3 }],
       "@stylistic/no-confusing-arrow": "error",
       "@stylistic/no-extra-parens": "off",
       "@stylistic/no-extra-semi": "error",
