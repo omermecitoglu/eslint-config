@@ -1,30 +1,36 @@
-import react from "eslint-plugin-react";
 import globals from "globals";
 import type { Linter } from "eslint";
 
-export default [
-  {
-    files: ["src/**/*.+(jsx|tsx)", "./*.+(jsx|tsx)"],
-    ignores: ["node_modules/"],
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
+export async function loadReactConfig() {
+  try {
+    const { default: react } = await import("eslint-plugin-react");
+    return [
+      {
+        files: ["src/**/*.+(jsx|tsx)", "./*.+(jsx|tsx)"],
+        ignores: ["node_modules/"],
+        languageOptions: {
+          globals: {
+            ...globals.browser,
+          },
+          parserOptions: {
+            ecmaFeatures: {
+              jsx: true,
+            },
+          },
+        },
+        plugins: {
+          react,
+        },
+        rules: {
+          "react/jsx-no-literals": ["error", {
+            allowedStrings: [
+              "&copy;",
+            ],
+          }],
         },
       },
-    },
-    plugins: {
-      react,
-    },
-    rules: {
-      "react/jsx-no-literals": ["error", {
-        allowedStrings: [
-          "&copy;",
-        ],
-      }],
-    },
-  },
-] as Linter.Config[];
+    ] as Linter.Config[];
+  } catch {
+    return [];
+  }
+}
