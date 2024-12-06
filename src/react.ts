@@ -25,6 +25,9 @@ export async function loadReactConfig() {
           "react/jsx-no-literals": ["error", {
             allowedStrings: [
               "&copy;",
+              "&laquo;",
+              "&raquo;",
+              "&hellip;",
             ],
           }],
         },
