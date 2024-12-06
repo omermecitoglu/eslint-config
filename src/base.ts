@@ -3,7 +3,7 @@ import type { Linter } from "eslint";
 
 export default [
   {
-    files: ["src/**/*.+(js|jsx)", "./*.+(js|jsx)"],
+    files: ["**/*.+(js|jsx)"],
     ignores: ["node_modules/"],
     rules: {
       ...eslint.configs.recommended.rules,

@@ -6,7 +6,7 @@ import type { ESLint, Linter } from "eslint";
 
 export default [
   {
-    files: ["src/**/*.+(ts|tsx)", "./*.+(ts|tsx)"],
+    files: ["**/*.+(ts|tsx)"],
     ignores: ["node_modules/"],
     languageOptions: {
       parser,

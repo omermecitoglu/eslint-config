@@ -5,7 +5,7 @@ export async function loadJsxAccessibilityConfig() {
     const { default: jsxA11y } = await import("eslint-plugin-jsx-a11y");
     return [
       {
-        files: ["src/**/*.+(jsx|tsx)", "./*.+(jsx|tsx)"],
+        files: ["**/*.+(jsx|tsx)"],
         ignores: ["node_modules/"],
         plugins: {
           "jsx-a11y": jsxA11y,

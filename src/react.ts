@@ -6,7 +6,7 @@ export async function loadReactConfig() {
     const { default: react } = await import("eslint-plugin-react");
     return [
       {
-        files: ["src/**/*.+(jsx|tsx)", "./*.+(jsx|tsx)"],
+        files: ["**/*.+(jsx|tsx)"],
         ignores: ["node_modules/"],
         languageOptions: {
           globals: {
