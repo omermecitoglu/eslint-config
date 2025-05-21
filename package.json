@@ -79,7 +79,6 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.3.2",
-    "@types/eslint__js": "^9.14.0",
     "@types/eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint": "^9.27.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
