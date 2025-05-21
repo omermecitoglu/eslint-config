@@ -46,7 +46,7 @@ export default [
       "@stylistic/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
       "@stylistic/jsx-indent": ["error", 2],
       "@stylistic/jsx-indent-props": ["error", 2],
-      "@stylistic/jsx-max-props-per-line": ["error", { maximum: { multi: 1, single: 4 } }],
+      "@stylistic/jsx-max-props-per-line": ["error", { maximum: { multi: 1, single: Infinity } }],
       "@stylistic/jsx-newline": ["error", { allowMultilines: false, prevent: true }],
       "@stylistic/jsx-one-expression-per-line": ["error", { allow: "single-child" }],
       "@stylistic/jsx-props-no-multi-spaces": "error",
