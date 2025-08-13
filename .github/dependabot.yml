@@ -6,5 +6,6 @@ updates:
       interval: "daily"
     assignees:
       - "omermecitoglu"
-    allow:
-      - dependency-name: "@omer-x/*"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
