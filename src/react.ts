@@ -29,6 +29,7 @@ export async function loadReactConfig() {
               "&raquo;",
               "&hellip;",
               "&rarr;",
+              "&ndash;",
             ],
           }],
         },
