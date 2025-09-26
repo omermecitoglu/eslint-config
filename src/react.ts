@@ -24,6 +24,7 @@ export async function loadReactConfig() {
         rules: {
           "react/jsx-no-literals": ["error", {
             allowedStrings: [
+              "&nbsp;",
               "&copy;",
               "&laquo;",
               "&raquo;",
