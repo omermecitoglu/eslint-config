@@ -48,7 +48,6 @@ export default [
       "@stylistic/jsx-max-props-per-line": ["error", { maximum: { multi: 1, single: Infinity } }],
       "@stylistic/jsx-newline": ["error", { allowMultilines: false, prevent: true }],
       "@stylistic/jsx-one-expression-per-line": ["error", { allow: "single-child" }],
-      "@stylistic/jsx-props-no-multi-spaces": "error",
       "@stylistic/jsx-quotes": ["error", "prefer-double"],
       "@stylistic/jsx-self-closing-comp": ["error", { component: true, html: true }],
       "@stylistic/jsx-sort-props": "off",
