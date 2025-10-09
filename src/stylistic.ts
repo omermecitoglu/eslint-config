@@ -66,7 +66,7 @@ export default [
       "@stylistic/linebreak-style": ["error", "unix"],
       "@stylistic/lines-around-comment": "off",
       "@stylistic/lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
-      "@stylistic/max-len": ["warn", { code: 128, ignorePattern: "className=" }],
+      "@stylistic/max-len": ["warn", { code: 128, ignorePattern: "^(?:import\\s.+\\sfrom\\s\".+\";|.*className=)" }],
       "@stylistic/max-statements-per-line": ["error", { max: 1 }],
       "@stylistic/member-delimiter-style": ["error", {
         multiline: { delimiter: "comma", requireLast: true },
