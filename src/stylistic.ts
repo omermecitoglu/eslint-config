@@ -83,7 +83,7 @@ export default [
       "@stylistic/no-mixed-operators": "error",
       "@stylistic/no-mixed-spaces-and-tabs": "error",
       "@stylistic/no-multi-spaces": "error",
-      "@stylistic/no-multiple-empty-lines": ["error", { max: 2, maxBOF: 0, maxEOF: 1 }],
+      "@stylistic/no-multiple-empty-lines": ["error", { max: 1, maxBOF: 0, maxEOF: 0 }],
       "@stylistic/no-tabs": "error",
       "@stylistic/no-trailing-spaces": "error",
       "@stylistic/no-whitespace-before-property": "error",
