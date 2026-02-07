@@ -19,7 +19,7 @@ export async function loadReactConfig(): Promise<Linter.Config[]> {
           },
         },
         plugins: {
-          react: react as NonNullable<Linter.Config["plugins"]>[string],
+          react,
         },
         rules: {
           "react/jsx-no-literals": ["error", {
