@@ -64,11 +64,26 @@
     "dist/"
   ],
   "scripts": {
+    "dev": "tsc --watch",
     "build": "tsc",
     "lint": "eslint"
   },
   "peerDependencies": {
-    "eslint": "^9"
+    "@next/eslint-plugin-next": "*",
+    "eslint": "^9",
+    "eslint-plugin-jsx-a11y": "**",
+    "eslint-plugin-react": "*"
+  },
+  "peerDependenciesMeta": {
+    "@next/eslint-plugin-next": {
+      "optional": true
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^5",
@@ -78,9 +93,10 @@
     "typescript-eslint": "^8"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.5.4",
+    "@next/eslint-plugin-next": "^16.1.6",
     "@types/eslint-plugin-jsx-a11y": "^6.10.1",
-    "eslint": "^9.37.0",
+    "@types/node": "^25.2.1",
+    "eslint": "^9.39.2",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "typescript": "^5.9.3"
