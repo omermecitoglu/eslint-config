@@ -1,4 +1,5 @@
 import base from "./base.js";
+import nextJsReminder from "./configs/reminders/next.js";
 import importPlugin from "./import.js";
 import { loadJsxAccessibilityConfig } from "./jsx-a11y.js";
 import { loadNextConfig } from "./next.js";
@@ -9,6 +10,7 @@ import unusedImports from "./unused-imports.js";
 import type { Linter } from "eslint";
 
 export default [
+  ...nextJsReminder,
   ...base,
   ...stylistic,
   ...typescript,
