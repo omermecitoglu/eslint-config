@@ -1,12 +1,12 @@
-import base from "./base.js";
+import base from "./configs/base.js";
+import importPlugin from "./configs/import.js";
+import { loadJsxAccessibilityConfig } from "./configs/jsx-a11y.js";
+import { loadNextConfig } from "./configs/next.js";
+import { loadReactConfig } from "./configs/react.js";
 import nextJsReminder from "./configs/reminders/next.js";
-import importPlugin from "./import.js";
-import { loadJsxAccessibilityConfig } from "./jsx-a11y.js";
-import { loadNextConfig } from "./next.js";
-import { loadReactConfig } from "./react.js";
-import stylistic from "./stylistic.js";
-import typescript from "./typescript.js";
-import unusedImports from "./unused-imports.js";
+import stylistic from "./configs/stylistic.js";
+import typescript from "./configs/typescript.js";
+import unusedImports from "./configs/unused-imports.js";
 import type { Linter } from "eslint";
 
 export default [
