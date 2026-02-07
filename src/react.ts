@@ -1,7 +1,7 @@
 import globals from "globals";
 import type { Linter } from "eslint";
 
-export async function loadReactConfig() {
+export async function loadReactConfig(): Promise<Linter.Config[]> {
   try {
     const { default: react } = await import("eslint-plugin-react");
     return [
@@ -19,7 +19,7 @@ export async function loadReactConfig() {
           },
         },
         plugins: {
-          react,
+          react: react as NonNullable<Linter.Config["plugins"]>[string],
         },
         rules: {
           "react/jsx-no-literals": ["error", {
@@ -35,7 +35,7 @@ export async function loadReactConfig() {
           }],
         },
       },
-    ] as Linter.Config[];
+    ];
   } catch {
     return [];
   }

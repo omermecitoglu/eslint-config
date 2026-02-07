@@ -1,6 +1,6 @@
 import type { Linter } from "eslint";
 
-export async function loadNextConfig() {
+export async function loadNextConfig(): Promise<Linter.Config[]> {
   try {
     const { default: nextPlugin } = await import("@next/eslint-plugin-next");
     return [
@@ -13,7 +13,7 @@ export async function loadNextConfig() {
           ...nextPlugin.configs["core-web-vitals"].rules,
         },
       },
-    ] as Linter.Config[];
+    ];
   } catch {
     return [];
   }

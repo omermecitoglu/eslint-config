@@ -1,6 +1,6 @@
 import type { Linter } from "eslint";
 
-export async function loadJsxAccessibilityConfig() {
+export async function loadJsxAccessibilityConfig(): Promise<Linter.Config[]> {
   try {
     const { default: jsxA11y } = await import("eslint-plugin-jsx-a11y");
     return [
@@ -15,7 +15,7 @@ export async function loadJsxAccessibilityConfig() {
           "jsx-a11y/no-autofocus": "off",
         },
       },
-    ] as Linter.Config[];
+    ];
   } catch {
     return [];
   }
