@@ -32,32 +32,32 @@
       "types": "./dist/index.d.ts"
     },
     "./base": {
-      "import": "./dist/base.js",
-      "types": "./dist/base.d.ts"
+      "import": "./dist/configs/base.js",
+      "types": "./dist/configs/base.d.ts"
     },
     "./stylistic": {
-      "import": "./dist/stylistic.js",
-      "types": "./dist/stylistic.d.ts"
+      "import": "./dist/configs/stylistic.js",
+      "types": "./dist/configs/stylistic.d.ts"
     },
     "./typescript": {
-      "import": "./dist/typescript.js",
-      "types": "./dist/typescript.d.ts"
+      "import": "./dist/configs/typescript.js",
+      "types": "./dist/configs/typescript.d.ts"
     },
     "./react": {
-      "import": "./dist/react.js",
-      "types": "./dist/react.d.ts"
+      "import": "./dist/configs/react.js",
+      "types": "./dist/configs/react.d.ts"
     },
     "./jsx-a11y": {
-      "import": "./dist/jsx-a11y.js",
-      "types": "./dist/jsx-a11y.d.ts"
+      "import": "./dist/configs/jsx-a11y.js",
+      "types": "./dist/configs/jsx-a11y.d.ts"
     },
     "./import": {
-      "import": "./dist/import.js",
-      "types": "./dist/import.d.ts"
+      "import": "./dist/configs/import.js",
+      "types": "./dist/configs/import.d.ts"
     },
     "./unused-imports": {
-      "import": "./dist/unused-imports.js",
-      "types": "./dist/unused-imports.d.ts"
+      "import": "./dist/configs/unused-imports.js",
+      "types": "./dist/configs/unused-imports.d.ts"
     }
   },
   "files": [
