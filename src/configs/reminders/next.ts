@@ -2,6 +2,7 @@ import { missingOptionalDepsRule } from "../../rules/missing-optional-deps.js";
 import type { Linter } from "eslint";
 
 export default [{
+  files: ["**/*.+(jsx|tsx)"],
   plugins: {
     internal: {
       rules: {

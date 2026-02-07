@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { createRequire } from "node:module";
 import path from "node:path";
 import type { Rule } from "eslint";
 
@@ -12,7 +13,8 @@ function isNextProject(root: string) {
 
 function hasPackage(name: string, cwd: string) {
   try {
-    require.resolve(name, { paths: [cwd] });
+    const requireFromProject = createRequire(path.join(cwd, "package.json"));
+    requireFromProject.resolve(name);
     return true;
   } catch {
     return false;
